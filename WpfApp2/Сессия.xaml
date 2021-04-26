@@ -1,0 +1,38 @@
+﻿<Window x:Class="WpfApp2.Сессия"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="Сессия" Height="1200" Width="1600">
+    <Grid>
+        <StackPanel VerticalAlignment="Top" Background="#ff9c1a" Height="200">
+            
+            <TextBox Text=" " Width="600" Height="50" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0 60 900 0" Background="#ff9c1a"
+                     BorderBrush="#ff9c1a" BorderThickness="5"/>
+        </StackPanel>
+        <StackPanel 
+            Orientation="Horizontal">
+            <local:fed1 x:Name="fed2" Width="250" Height="350" Margin="50 0 0 200 " Title="LIQUI MOLY" ImageSource="0DF0A8A4.jpg" Price="$30" Loaded="fed1_Loaded_3"/>
+            <local:fed1 Width="250" Height="350" Margin="50 0 0 200 " ImageSource="3B70C57C.jpg" Title="ENGENE OIL" Price="$25" status="False" Loaded="fed1_Loaded_2"/>
+            <local:fed1 Width="250" Height="350" Margin="50 0 0 200 " ImageSource="8BC0C1A9.jpg" Title="EDGE" Price="$20" Loaded="fed1_Loaded_5"/>
+            <local:fed1 Width="250" Height="350" Margin="50 0 0 200 " ImageSource="40409946.jpg" Title="MOBIL SUPER" Price="$20" Loaded="fed1_Loaded_1"/>
+            <local:fed1 Width="250" Height="350" Margin="50 0 0 200 " ImageSource="F8E0B138.jpg" Title="ELF EVOLUTION" OverridesDefaultStyle="True" Price="$15"/>
+       
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <local:fed1 Width="250" Height="350" Margin="50 600 0 0 " Title="PREMIUM DPF" ImageSource="2D709062.jpg" Price="$30" Loaded="fed1_Loaded_4"/>
+            <local:fed1 Width="250" Height="350" Margin="50 600 0 0 " Title="NISSAN" ImageSource="8FE07916.jpg" Price="$30"/>
+            <local:fed1 Width="250" Height="350" Margin="50 600 0 0 " Title="HELIX ULTRA" ImageSource="F2B0E078.jpg" Price="$30"/>
+            <local:fed1 Width="250" Height="350" Margin="50 600 0 0" Title="MOTOR OIL" ImageSource="2390848B.jpg" Price="$30"/>
+            <local:fed1 Width="250" Height="350" Margin="50 600 0 0 " Title="ZEPRO" ImageSource="3DA0B713.jpg" Price="$30"/>
+        </StackPanel>
+        
+        <TextBox Height="70" Width="700" Text=" " HorizontalAlignment="Left" Margin="200 0 0 950" Background="#ffffe1" >
+            
+        </TextBox>
+        
+        
+    </Grid>
+</Window>
